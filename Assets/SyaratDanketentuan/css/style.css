@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "poppins_mediumregular";
+  src: url("../font/poppins-medium-webfont.woff2") format("woff2"),
+    url("../font/poppins-medium-webfont.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: "poppins_mediumregular", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-transform: uppercase;
+  color: #fff;
+  background-image: url(../img/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+}
+.header h1 {
+    color: #fff;
+    font-size: 2.2em;
+    font-weight: 500;
+}
+
+.syarat {
+  display: flex;
+  
+  font-size: 2em;
+  line-height: 1.6em;
+  font-weight: 500;
+  margin: 0 11% 0 11%;
+}
+
+.button {
+    width: 16.6rem;
+    height: 5.2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) , #aaa 100%);
+    border: none;
+}
+.button a {
+  text-decoration: none;
+  font-size: 2.6em;
+  color: #fff;
+}
+.button:hover{
+  /* background-color: #aaa; */
+  border:1px solid #aaa;
+  background: rgba(255, 255, 255, 0);
+
+}
+
+@media screen and (max-width: 878px) {
+    .container{
+      font-size: 0.8em;
+    }
+    .button{
+      width: 17em;
+      height: 5.6em;
+  }
+  .button a{
+      font-size: 2.5em;
+  }
+    
+
+}
+@media screen and (max-width: 684px) {
+    .container{
+      font-size: 0.6em;
+    }
+    .button{
+      width: 15em;
+      height: 4.6em;
+  }
+  .button a{
+      font-size: 1.9em;
+  }
+}
+@media screen and (max-width: 518px) {
+    .container{
+      font-size: 0.4em;
+    }
+    .content{
+      justify-content: start;
+    }
+    .button{
+      width: 10.6em;
+      height: 3.6em;
+  }
+  .button a{
+      font-size:1.6em;
+  }
+}
+
